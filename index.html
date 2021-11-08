@@ -14,18 +14,24 @@
 <body>
     <div class="modal hidden">
         <div class="inner-modal">
-        <h3 class="project-modal-title">Title</h3>
-        <p class="project-modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores porro debitis optio exercitationem repellendus est unde cumque delectus molestias. Dolor delectus odit perferendis blanditiis sit in tenetur nemo vitae!</p>
-        <a href="#" class="link view-project">View Project</a>
-        <a href="#" class="link view-repo">View Repository</a>
+            <div class="modal-close-btn"><i class="fas fa-times"></i></div>
+        <h3 class="project-modal-title">Project Title</h3>
+        <div class="modal-image-container">
+            <img src="./images/projectimages/myfood.png" alt="my foods">
+        </div>
+        <p class="project-modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores porro debitis optio exercitationem repellendus est unde cumque delectus adipisicing elit. Esse asperiores porro debitis optio exercitationem repellendus est unde cumque delectus molestias. Dolor delectus oditunde cumque delectus adipisicing elit. Esse asperiores porro debitis optio exercitationem repellendus est unde cumque delectus molestias. Dolor delectus odit perferendis blanditiis sit in tenetur molestias. Dolor delectus odit perferendisunde cumque delectus adipisicing elit. Esse asperiores porro debitis optio exercitationem repellendus est unde cumque delectus molestias. Dolor delectus oditunde cumque delectus adipisicing elit. Esse asperiores porro debitis optio exercitationem repellendus est unde cumque delectus molestias. Dolor delectus odit perferendis  blanditiis sit in tenetur nemo vitae!</p>
+        <div class="modal-buttons">
+            <a href="#" class="btn view-project">View Project</a>
+            <a href="#" class="btn view-repo">View Repository</a>
+        </div>
     </div>
     </div>
     <div class="wrapper backdrop-filter">
-    <header class="header-container">
+    <header class="header-container" id="header-container">
         <div class="flags">
-            <a href="#" class="download" ><i class="fas fa-download"></i><span>Download CV</span></a>
-            <a href="#" title="English"><img src="./images/uk.svg" alt="uk flag"></a>
-            <a href="#" title="Italiano"><img src="./images/italy.svg" alt="italy flag"></a>
+            <a href="./documents/CVphiliphinchsliffENG.pdf" class="download" download="CVphiliphinchsliffENG"><i class="fas fa-download"></i><span>Download CV</span></a>
+            <a href="#" title="English" id='uk-flag'><img src="./images/uk.svg" alt="uk flag" class="active-flag"></a>
+            <a href="#" title="Italiano" id='italy-flag'><img src="./images/italy.svg" alt="italy flag"></a>
         </div>
         <div class="inner-header">
             <div class="avatar-container b-shadow">
@@ -34,7 +40,7 @@
             <div class="header-info">
                 <h1 class="main-title"> <span class="first-name">Philip</span> <span class="last-name">Hinchsliff</span></h1>
                 <h4 class="profession"> < Front-End Developer /> </Front-End></h4>
-                <p class="introduction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores vero, sint unde molestiae aperiam. Iste voluptates illo unde accusamus sequi obcaecati dolore placeat libero! Porro quae dolor eius maiores</p>
+                <p class="introduction">I am a Front-End Web Developer & I enjoy building web apps. I am motivated & willing to learn new things! Check out my projects! During lockdown in 2020, after losing my aviation job as a cabin manager, I started coding & learned web development & became a father!</p>
             </div>
         </div>
     </header>
@@ -84,10 +90,10 @@
                     <h3 class="projects-title"><span><i class="fas fa-shapes"></i></span>Projects</h3>
                 </div>
                 <div class="projects">
-                    <h4 class="project-title">MY FOODS APP</h4>
+                    <h4 class="project-title project-title1">MY FOODS APP</h4>
                     <div class="project project1">
                         <div class="project-image">
-                            <img src="/images/projectimages/myfood.png" alt="">
+                            <img src="./images/projectimages/myfood.png" alt="">
                         </div>
                         <div class="project-info">
                             <ul>
@@ -100,10 +106,10 @@
                             </ul>
                         </div>
                     </div>
-                    <h4 class="project-title">WEATHER APP</h4>
-                    <div class="project project1">
+                    <h4 class="project-title project-title2">WEATHER APP</h4>
+                    <div class="project project2">
                         <div class="project-image">
-                            <img src="/images/projectimages/weather.png" alt="">
+                            <img src="./images/projectimages/weather.png" alt="">
                         </div>
                         <div class="project-info">
                             <ul>
@@ -116,10 +122,10 @@
                             </ul>
                         </div>
                     </div>
-                    <h4 class="project-title">THE SOLAR SYSTEM</h4>
-                    <div class="project project1">
+                    <h4 class="project-title project-title3">THE SOLAR SYSTEM</h4>
+                    <div class="project project3">
                         <div class="project-image">
-                            <img src="/images/projectimages/solarsystem.png" alt="">
+                            <img src="./images/projectimages/solarsystem.png" alt="">
                         </div>
                         <div class="project-info">
                             <ul>
@@ -132,10 +138,10 @@
                             </ul>
                         </div>
                     </div>
-                    <h4 class="project-title">MY PORTFOLIO</h4>
-                    <div class="project project1">
+                    <h4 class="project-title project-title4">MY PORTFOLIO</h4>
+                    <div class="project project4">
                         <div class="project-image">
-                            <img src="/images/projectimages/portfolio.png" alt="">
+                            <img src="./images/projectimages/portfolio.png" alt="">
                         </div>
                         <div class="project-info">
                             <ul>
@@ -148,10 +154,10 @@
                             </ul>
                         </div>
                     </div>
-                    <h4 class="project-title">WORLD COUNTRIES</h4>
-                    <div class="project project1">
+                    <h4 class="project-title project-title5">WORLD COUNTRIES</h4>
+                    <div class="project project5">
                         <div class="project-image">
-                            <img src="/images/projectimages/worldcontries.png" alt="">
+                            <img src="./images/projectimages/worldcontries.png" alt="">
                         </div>
                         <div class="project-info">
                             <ul>
@@ -164,10 +170,10 @@
                             </ul>
                         </div>
                     </div>
-                    <h4 class="project-title">INTERACTIVE ITALY MAP</h4>
-                    <div class="project project1">
+                    <h4 class="project-title project-title6">INTERACTIVE ITALY MAP</h4>
+                    <div class="project project6">
                         <div class="project-image">
-                            <img src="/images/projectimages/mapofitaly.png" alt="">
+                            <img src="./images/projectimages/mapofitaly.png" alt="">
                         </div>
                         <div class="project-info">
                             <ul>
@@ -180,10 +186,10 @@
                             </ul>
                         </div>
                     </div>
-                    <h4 class="project-title">POKEMON FLIP CARDS</h4>
-                    <div class="project project1">
+                    <h4 class="project-title project-title7">POKEMON FLIP CARDS</h4>
+                    <div class="project project7">
                         <div class="project-image">
-                            <img src="/images/projectimages/pokemon.png" alt="">
+                            <img src="./images/projectimages/pokemon.png" alt="">
                         </div>
                         <div class="project-info">
                             <ul>
@@ -196,10 +202,10 @@
                             </ul>
                         </div>
                     </div>
-                    <h4 class="project-title">GYM WEBSITE</h4>
-                    <div class="project project1">
+                    <h4 class="project-title project-title8">GYM WEBSITE</h4>
+                    <div class="project project8">
                         <div class="project-image">
-                            <img src="/images/projectimages/gym.png" alt="">
+                            <img src="./images/projectimages/gym.png" alt="">
                         </div>
                         <div class="project-info">
                             <ul>
@@ -249,11 +255,11 @@
             <div class="links-container">
                 <div class="links b-shadow">
                     <div class="links-grid">
-                        <a href="mailto:philip.hinchsliff@yahoo.com"><i class="fas fa-envelope"></i><small>philip.hinchsliff@yahoo.com</small></a>
+                        <a href="mailto:philip.hinchsliff@yahoo.com" class="email-link"><i class="fas fa-envelope"></i><small class="email-text">philip.hinchsliff@yahoo.com</small></a>
                         <a href="https://www.linkedin.com/in/philip-hinchsliff/" target="_blank"><i class="fab fa-linkedin"></i><small>linkedin.com/in/philip-hinchsliff</small></a>
                         <a href="https://github.com/philipHinch" target="_blank"><i class="fab fa-github-square"></i><small>github.com/philipHinch</small></a>
                         <a href="https://www.facebook.com/philiphinchsliff/" target="_blank"><i class="fab fa-facebook-square"></i><small>facebook.com/philiphinchsliff</small></a>
-                        <a href="#"><i class="fas fa-phone-square"></i><small>+358 (0) 452709828</small> </a>
+                        <a href="#" class="phone-number-link"><i class="fas fa-phone-square"></i><small class="phone-number">+358 (0) 452709828</small> </a>
                         <a href="https://philhinchportfolio.netlify.app/" target="_blank"><i class="fab fa-odnoklassniki-square"></i><small>My Personal Portfolio</small> </a>
                     </div>
                 </div>
@@ -290,7 +296,7 @@
                         </div>
                         <p class="experience-inner-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure id, nesciunt debitis molestiae nisi beatae incidunt dolorum quidem ullam voluptas porro molestias cum maiores possimus, esse nihil nulla, sit ut placeat asperiores velit eligendi! Quo nostrum culpa cumque rem. Nam delectus iste debitis voluptatum nemo excepturi doloribus harum recusandae ut!</p>
                     </div>
-                    <div class="experience experience2">
+                    <div class="experience experience3">
                         <h3 class="experience-inner-title">Front Desk Receptionist</h3>
                         <h5 class="experience-inner-company">Hotel Gran Bretagna</h5>
                         <div class="date-and-location">
@@ -344,7 +350,9 @@
         </section>
     </main>
 </div>
-<footer>&copy; Philip Hinchsliff 2021 - <a href="https://github.com/philipHinch" class="footer-link" target="_blank">github.com/philipHinch</a></footer>
-    <script src="/App.js"></script>
+<footer>&copy; Philip Hinchsliff 2021 - <a href="https://github.com/philipHinch" class="footer-link" target="_blank">github.com/philipHinch</a><span class="dash">-</span><a href="#header-container" class="to-top">Go To Top</a></footer>
+    <script src="./app.js"></script>
+    <script src="./dataENG.js"></script>
+    <script src="./dataITA.js"></script>
 </body>
 </html>

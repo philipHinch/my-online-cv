@@ -1,0 +1,6 @@
+
+3. create a function to display modal on project click and to remove modal on clicking outside of modal----if project is clicked, set modal visibility to true, else to false. also once modal is visible, disable overflow-y on body (to disable scrolling)
+
+4. add fucntion to download cv in different languages depending on selected language
+
+5. add function to display info in either english or italian when respective flag is clicked
