@@ -7,24 +7,35 @@ const email = document.querySelector('.email-link');
 const emailText = document.querySelector('.email-text');
 const italyFlag = document.getElementById('italy-flag')
 const ukFlag = document.getElementById('uk-flag')
+const header = document.querySelector('header')
 
+const allProjects = document.querySelectorAll('.project');
 const projectsTitleContainer = document.querySelector('.projects-title-container')
-const projectsContainer = document.querySelector('.projects');
-const educationContainer = document.querySelector('.education-container');
-const languagesContainer = document.querySelector('.languages-container');
-const headerInfoContainer = document.querySelector('.header-info');
-const experienceTitleContainer = document.querySelector('.experience-title-container');
-const innerExperienceContainer = document.querySelector('.inner-experience');
-const certificatesTitleContainer = document.querySelector('.certificates-title-container');
-const otherTitleContainer = document.querySelector('.other-title-container');
-const drivingLicensesContainer = document.querySelector('.driving-licenses');
-const downloadBtn = document.querySelector('.download');
+const project1 = document.querySelector('.project1')
+const project2 = document.querySelector('.project2')
+const project3 = document.querySelector('.project3')
+const project4 = document.querySelector('.project4')
+const project5 = document.querySelector('.project5')
+const project6 = document.querySelector('.project6')
+const project7 = document.querySelector('.project7')
+const project8 = document.querySelector('.project8')
 
 
+const modal = document.querySelector('.modal');
+const innerModal = document.querySelector('.inner-modal')
+const modalCloseBtn = document.querySelector('.modal-close-btn');
 
+let isItalian;
+let isEnglish;
 let isModalVisible = false;
-let isItalian = false;
-let isEnglish = true;
+
+if (header.classList.contains('english-page')) {
+    isItalian = false;
+    isEnglish = true;
+} else if (header.classList.contains('italian-page')) {
+    isItalian = true;
+    isEnglish = false;
+}
 
 // FUNCTIONS
 
@@ -39,18 +50,408 @@ const copyToClipboard = str => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // EVENT LISTENERS
+
+
+project1.addEventListener('click', () => {
+    //if isEnglish==true, show english info
+    if (isEnglish === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+<div class="modal-close-btn"><i class="fas fa-times"></i></div>
+<h3 class="project-modal-title">${ projects[0].title }</h3>
+<div class="modal-image-container">
+    <img src="${ projects[0].img }" alt="my foods">
+</div>
+<p class="project-modal-info">${ projects[0].extraInfo }</p>
+<div class="modal-buttons">
+    <a href="${ projects[0].link }" class="btn view-project" target="_blank" >View Project</a>
+    <a href="${ projects[0].repo }" class="btn view-repo" target="_blank">View Repository</a>
+</div>
+`
+    }
+
+    //if isItalian==true, show italian info
+    if (isItalian === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+        <div class="modal-close-btn"><i class="fas fa-times"></i></div>
+        <h3 class="project-modal-title">${ projectsITA[0].title }</h3>
+        <div class="modal-image-container">
+            <img src="${ projectsITA[0].img }" alt="my foods">
+        </div>
+        <p class="project-modal-info">${ projectsITA[0].extraInfo }</p>
+        <div class="modal-buttons">
+            <a href="${ projectsITA[0].link }" class="btn view-project" target="_blank" >Vedi Progetto</a>
+            <a href="${ projectsITA[0].repo }" class="btn view-repo" target="_blank">Vedi Repository</a>
+        </div>
+        `
+    }
+
+    //modal close button
+    modal.addEventListener('click', (e) => {
+        if (e.target.classList.contains('fa-times')) {
+            modal.classList.add('hidden')
+            body.style.overflowY = 'scroll';
+        }
+    })
+})
+
+project2.addEventListener('click', () => {
+    //if isEnglish==true, show english info
+    if (isEnglish === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+<div class="modal-close-btn"><i class="fas fa-times"></i></div>
+<h3 class="project-modal-title">${ projects[1].title }</h3>
+<div class="modal-image-container">
+    <img src="${ projects[1].img }" alt="my foods">
+</div>
+<p class="project-modal-info">${ projects[1].extraInfo }</p>
+<div class="modal-buttons">
+    <a href="${ projects[1].link }" class="btn view-project" target="_blank" >View Project</a>
+    <a href="${ projects[1].repo }" class="btn view-repo" target="_blank">View Repository</a>
+</div>
+`
+    }
+
+    //if isItalian==true, show italian info
+    if (isItalian === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+        <div class="modal-close-btn"><i class="fas fa-times"></i></div>
+        <h3 class="project-modal-title">${ projectsITA[1].title }</h3>
+        <div class="modal-image-container">
+            <img src="${ projectsITA[1].img }" alt="my foods">
+        </div>
+        <p class="project-modal-info">${ projectsITA[1].extraInfo }</p>
+        <div class="modal-buttons">
+            <a href="${ projectsITA[1].link }" class="btn view-project" target="_blank" >Vedi Progetto</a>
+            <a href="${ projectsITA[1].repo }" class="btn view-repo" target="_blank">Vedi Repository</a>
+        </div>
+        `
+    }
+
+    //modal close button
+    modal.addEventListener('click', (e) => {
+        if (e.target.classList.contains('fa-times')) {
+            modal.classList.add('hidden')
+            body.style.overflowY = 'scroll';
+        }
+    })
+})
+
+project3.addEventListener('click', () => {
+    //if isEnglish==true, show english info
+    if (isEnglish === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+<div class="modal-close-btn"><i class="fas fa-times"></i></div>
+<h3 class="project-modal-title">${ projects[2].title }</h3>
+<div class="modal-image-container">
+    <img src="${ projects[2].img }" alt="my foods">
+</div>
+<p class="project-modal-info">${ projects[2].extraInfo }</p>
+<div class="modal-buttons">
+    <a href="${ projects[2].link }" class="btn view-project" target="_blank" >View Project</a>
+    <a href="${ projects[2].repo }" class="btn view-repo" target="_blank">View Repository</a>
+</div>
+`
+    }
+
+    //if isItalian==true, show italian info
+    if (isItalian === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+        <div class="modal-close-btn"><i class="fas fa-times"></i></div>
+        <h3 class="project-modal-title">${ projectsITA[2].title }</h3>
+        <div class="modal-image-container">
+            <img src="${ projectsITA[2].img }" alt="my foods">
+        </div>
+        <p class="project-modal-info">${ projectsITA[2].extraInfo }</p>
+        <div class="modal-buttons">
+            <a href="${ projectsITA[2].link }" class="btn view-project" target="_blank" >Vedi Progetto</a>
+            <a href="${ projectsITA[2].repo }" class="btn view-repo" target="_blank">Vedi Repository</a>
+        </div>
+        `
+    }
+
+    //modal close button
+    modal.addEventListener('click', (e) => {
+        if (e.target.classList.contains('fa-times')) {
+            modal.classList.add('hidden')
+            body.style.overflowY = 'scroll';
+        }
+    })
+})
+
+project4.addEventListener('click', () => {
+    //if isEnglish==true, show english info
+    if (isEnglish === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+<div class="modal-close-btn"><i class="fas fa-times"></i></div>
+<h3 class="project-modal-title">${ projects[3].title }</h3>
+<div class="modal-image-container">
+    <img src="${ projects[3].img }" alt="my foods">
+</div>
+<p class="project-modal-info">${ projects[3].extraInfo }</p>
+<div class="modal-buttons">
+    <a href="${ projects[3].link }" class="btn view-project" target="_blank" >View Project</a>
+    <a href="${ projects[3].repo }" class="btn view-repo" target="_blank">View Repository</a>
+</div>
+`
+    }
+
+    //if isItalian==true, show italian info
+    if (isItalian === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+        <div class="modal-close-btn"><i class="fas fa-times"></i></div>
+        <h3 class="project-modal-title">${ projectsITA[3].title }</h3>
+        <div class="modal-image-container">
+            <img src="${ projectsITA[3].img }" alt="my foods">
+        </div>
+        <p class="project-modal-info">${ projectsITA[3].extraInfo }</p>
+        <div class="modal-buttons">
+            <a href="${ projectsITA[3].link }" class="btn view-project" target="_blank" >Vedi Progetto</a>
+            <a href="${ projectsITA[3].repo }" class="btn view-repo" target="_blank">Vedi Repository</a>
+        </div>
+        `
+    }
+
+    //modal close button
+    modal.addEventListener('click', (e) => {
+        if (e.target.classList.contains('fa-times')) {
+            modal.classList.add('hidden')
+            body.style.overflowY = 'scroll';
+        }
+    })
+})
+
+project5.addEventListener('click', () => {
+    //if isEnglish==true, show english info
+    if (isEnglish === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+<div class="modal-close-btn"><i class="fas fa-times"></i></div>
+<h3 class="project-modal-title">${ projects[4].title }</h3>
+<div class="modal-image-container">
+    <img src="${ projects[4].img }" alt="my foods">
+</div>
+<p class="project-modal-info">${ projects[4].extraInfo }</p>
+<div class="modal-buttons">
+    <a href="${ projects[4].link }" class="btn view-project" target="_blank" >View Project</a>
+    <a href="${ projects[4].repo }" class="btn view-repo" target="_blank">View Repository</a>
+</div>
+`
+    }
+
+    //if isItalian==true, show italian info
+    if (isItalian === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+        <div class="modal-close-btn"><i class="fas fa-times"></i></div>
+        <h3 class="project-modal-title">${ projectsITA[4].title }</h3>
+        <div class="modal-image-container">
+            <img src="${ projectsITA[4].img }" alt="my foods">
+        </div>
+        <p class="project-modal-info">${ projectsITA[4].extraInfo }</p>
+        <div class="modal-buttons">
+            <a href="${ projectsITA[4].link }" class="btn view-project" target="_blank" >Vedi Progetto</a>
+            <a href="${ projectsITA[4].repo }" class="btn view-repo" target="_blank">Vedi Repository</a>
+        </div>
+        `
+    }
+
+    //modal close button
+    modal.addEventListener('click', (e) => {
+        if (e.target.classList.contains('fa-times')) {
+            modal.classList.add('hidden')
+            body.style.overflowY = 'scroll';
+        }
+    })
+})
+
+project6.addEventListener('click', () => {
+    //if isEnglish==true, show english info
+    if (isEnglish === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+<div class="modal-close-btn"><i class="fas fa-times"></i></div>
+<h3 class="project-modal-title">${ projects[5].title }</h3>
+<div class="modal-image-container">
+    <img src="${ projects[5].img }" alt="my foods">
+</div>
+<p class="project-modal-info">${ projects[5].extraInfo }</p>
+<div class="modal-buttons">
+    <a href="${ projects[5].link }" class="btn view-project" target="_blank" >View Project</a>
+    <a href="${ projects[5].repo }" class="btn view-repo" target="_blank">View Repository</a>
+</div>
+`
+    }
+
+    //if isItalian==true, show italian info
+    if (isItalian === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+        <div class="modal-close-btn"><i class="fas fa-times"></i></div>
+        <h3 class="project-modal-title">${ projectsITA[5].title }</h3>
+        <div class="modal-image-container">
+            <img src="${ projectsITA[5].img }" alt="my foods">
+        </div>
+        <p class="project-modal-info">${ projectsITA[5].extraInfo }</p>
+        <div class="modal-buttons">
+            <a href="${ projectsITA[5].link }" class="btn view-project" target="_blank" >Vedi Progetto</a>
+            <a href="${ projectsITA[5].repo }" class="btn view-repo" target="_blank">Vedi Repository</a>
+        </div>
+        `
+    }
+
+    //modal close button
+    modal.addEventListener('click', (e) => {
+        if (e.target.classList.contains('fa-times')) {
+            modal.classList.add('hidden')
+            body.style.overflowY = 'scroll';
+        }
+    })
+})
+
+project7.addEventListener('click', () => {
+    //if isEnglish==true, show english info
+    if (isEnglish === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+<div class="modal-close-btn"><i class="fas fa-times"></i></div>
+<h3 class="project-modal-title">${ projects[6].title }</h3>
+<div class="modal-image-container">
+    <img src="${ projects[6].img }" alt="my foods">
+</div>
+<p class="project-modal-info">${ projects[6].extraInfo }</p>
+<div class="modal-buttons">
+    <a href="${ projects[6].link }" class="btn view-project" target="_blank" >View Project</a>
+    <a href="${ projects[6].repo }" class="btn view-repo" target="_blank">View Repository</a>
+</div>
+`
+    }
+
+    //if isItalian==true, show italian info
+    if (isItalian === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+        <div class="modal-close-btn"><i class="fas fa-times"></i></div>
+        <h3 class="project-modal-title">${ projectsITA[6].title }</h3>
+        <div class="modal-image-container">
+            <img src="${ projectsITA[6].img }" alt="my foods">
+        </div>
+        <p class="project-modal-info">${ projectsITA[6].extraInfo }</p>
+        <div class="modal-buttons">
+            <a href="${ projectsITA[6].link }" class="btn view-project" target="_blank" >Vedi Progetto</a>
+            <a href="${ projectsITA[6].repo }" class="btn view-repo" target="_blank">Vedi Repository</a>
+        </div>
+        `
+    }
+
+    //modal close button
+    modal.addEventListener('click', (e) => {
+        if (e.target.classList.contains('fa-times')) {
+            modal.classList.add('hidden')
+            body.style.overflowY = 'scroll';
+        }
+    })
+})
+
+project8.addEventListener('click', () => {
+    //if isEnglish==true, show english info
+    if (isEnglish === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+<div class="modal-close-btn"><i class="fas fa-times"></i></div>
+<h3 class="project-modal-title">${ projects[7].title }</h3>
+<div class="modal-image-container">
+    <img src="${ projects[7].img }" alt="my foods">
+</div>
+<p class="project-modal-info">${ projects[7].extraInfo }</p>
+<div class="modal-buttons">
+    <a href="${ projects[7].link }" class="btn view-project" target="_blank" >View Project</a>
+    <a href="${ projects[7].repo }" class="btn view-repo" target="_blank">View Repository</a>
+</div>
+`
+    }
+
+    //if isItalian==true, show italian info
+    if (isItalian === true) {
+        //show modal & stop scroll
+        modal.classList.remove('hidden')
+        body.style.overflowY = 'hidden';
+        innerModal.innerHTML = `
+        <div class="modal-close-btn"><i class="fas fa-times"></i></div>
+        <h3 class="project-modal-title">${ projectsITA[7].title }</h3>
+        <div class="modal-image-container">
+            <img src="${ projectsITA[7].img }" alt="my foods">
+        </div>
+        <p class="project-modal-info">${ projectsITA[7].extraInfo }</p>
+        <div class="modal-buttons">
+            <a href="${ projectsITA[7].link }" class="btn view-project" target="_blank" >Vedi Progetto</a>
+            <a href="${ projectsITA[7].repo }" class="btn view-repo" target="_blank">Vedi Repository</a>
+        </div>
+        `
+    }
+
+    //modal close button
+    modal.addEventListener('click', (e) => {
+        if (e.target.classList.contains('fa-times')) {
+            modal.classList.add('hidden')
+            body.style.overflowY = 'scroll';
+        }
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////  all good  //////////////////////////////////////
+
 
 //copy phone number to clipboard
 phoneNumber.addEventListener('click', (e) => {
@@ -62,7 +463,11 @@ phoneNumber.addEventListener('click', (e) => {
         copyToClipboard('+358452709828');
     }
 
-    numberText.textContent = 'Number Copied!'
+    if (isEnglish === true) {
+        numberText.textContent = 'Number Copied!'
+    } else if (isItalian === true) {
+        numberText.textContent = 'Numero Copiato!'
+    }
 
     setTimeout(() => {
         numberText.textContent = '+358 (0) 452709828'
@@ -79,530 +484,13 @@ email.addEventListener('click', (e) => {
         copyToClipboard('philip.hinchsliff@yahoo.com');
     }
 
-    emailText.textContent = 'Email Copied!'
+    if (isEnglish === true) {
+        emailText.textContent = 'Email Copied!'
+    } else {
+        emailText.textContent = 'Email Copiata!'
+    }
 
     setTimeout(() => {
         emailText.textContent = 'philip.hinchsliff@yahoo.com'
     }, 1000)
-})
-
-//flag events
-italyFlag.addEventListener('click', () => {
-
-    isEnglish = false;
-    isItalian = true;
-
-    downloadBtn.setAttribute('href', './documents/CVphiliphinchsliffITA.pdf')
-    downloadBtn.setAttribute('download', 'CVphiliphinchsliffITA.pdf')
-
-
-    //change flag opacities
-    italyFlag.firstChild.classList.add('active-flag')
-    ukFlag.firstChild.classList.remove('active-flag')
-
-    //update header 
-    headerInfoContainer.innerHTML = `
-    <h1 class="main-title"> <span class="first-name">Philip</span> <span class="last-name">Hinchsliff</span></h1>
-    <h4 class="profession"> < Front-End Developer /> </Front-End></h4>
-    <p class="introduction">${ introITA }</p>
-    `;
-
-    //update projects
-    projectsTitleContainer.innerHTML = `
-    <h3 class="projects-title"><span><i class="fas fa-shapes"></i></span>${ asideTitlesITA[1] }</h3>
-    `;
-
-    projectsContainer.innerHTML = `
-    <h4 class="project-title project-title1">${ projectsITA[0].title }</h4>
-    <div class="project project1">
-        <div class="project-image">
-            <img src="./images/projectimages/myfood.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title2">${ projectsITA[1].title }</h4>
-    <div class="project project2">
-        <div class="project-image">
-            <img src="./images/projectimages/weather.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title3">${ projectsITA[2].title }</h4>
-    <div class="project project3">
-        <div class="project-image">
-            <img src="./images/projectimages/solarsystem.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title4">${ projectsITA[3].title }</h4>
-    <div class="project project4">
-        <div class="project-image">
-            <img src="./images/projectimages/portfolio.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title5">${ projectsITA[4].title }</h4>
-    <div class="project project5">
-        <div class="project-image">
-            <img src="./images/projectimages/worldcontries.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title6">${ projectsITA[5].title }</h4>
-    <div class="project project6">
-        <div class="project-image">
-            <img src="./images/projectimages/mapofitaly.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title7">${ projectsITA[6].title }</h4>
-    <div class="project project7">
-        <div class="project-image">
-            <img src="./images/projectimages/pokemon.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title8">${ projectsITA[7].title }</h4>
-    <div class="project project8">
-        <div class="project-image">
-            <img src="./images/projectimages/gym.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    `;
-
-    //update education
-
-    educationContainer.innerHTML = `
-    <div class="education-title-container">
-    <h3 class="education-title"><span><i class="fas fa-graduation-cap"></i></span>${ asideTitlesITA[2] }</h3>
-</div>
-<a href="https://www.liceoquintiliano.edu.it/" target="_blank" title="Vedi Istituto" class="education-link">
-<div class="education-inner">
-    <h4 class="education-inner-title">${ educationITA[0].title }</h4>
-    <h5 class="education-institute">
-        8° I.I.S.S. "M.F. QUINTILIANO"
-    </h5>
-    <h6 class="education-location"><i class="fas fa-globe"></i> ${ educationITA[0].location }</h6>
-    <small class="education-date"><i class="fas fa-calendar"></i> 2004-2009</small>
-</div>
-</a>
-    `;
-
-    //update languages
-
-    languagesContainer.innerHTML = `
-    <div class="languages-title-container">
-    <h3 class="languages-title"><i class="fas fa-flag"></i></span>${ asideTitlesITA[3] }</h3>
-</div>
-<div class="progress-container">
-    <label for="language-progress1">${ languagesITA[0] }</label>
-    <div id="language-progress1" class="language-progress1">
-        <div class="language-progress-bar1"></div>
-    </div>
-    <label for="language-progress2">${ languagesITA[1] }</label>
-    <div id="language-progress2" class="language-progress2">
-        <div class="language-progress-bar2"></div>
-    </div>
-</div>
-    `;
-
-
-    //update experience title
-
-    experienceTitleContainer.innerHTML = `
-    <h3 class="experience-title"><span><i class="fas fa-briefcase"></i></span>${ mainTitlesITA[0] }</h3>
-    `;
-
-    //update experiences
-
-    innerExperienceContainer.innerHTML = `
-    <div class="experience experience0">
-    <h3 class="experience-inner-title">${ experiencesITA[0].position }</h3>
-    <h5 class="experience-inner-company">${ experiencesITA[0].employer }</h5>
-    <div class="date-and-location">
-        <h6 class="experience-inner-date"><i class="fas fa-calendar"></i>${ experiencesITA[0].date }</h6>
-        <h6 class="experience-inner-location"><i class="fas fa-globe"></i>${ experiencesITA[0].locations }</h6>
-    </div>
-    <p class="experience-inner-info">${ experiencesITA[0].info }</p>
-</div>
-<div class="experience experience1">
-    <h3 class="experience-inner-title">${ experiencesITA[1].position }</h3>
-    <h5 class="experience-inner-company">${ experiencesITA[1].employer }</h5>
-    <div class="date-and-location">
-        <h6 class="experience-inner-date"><i class="fas fa-calendar"></i>${ experiencesITA[1].date }</h6>
-        <h6 class="experience-inner-location"><i class="fas fa-globe"></i>${ experiencesITA[1].locations }</h6>
-    </div>
-    <p class="experience-inner-info">${ experiencesITA[1].info }</p>
-</div>
-<div class="experience experience2">
-    <h3 class="experience-inner-title">${ experiencesITA[2].position }</h3>
-    <h5 class="experience-inner-company">${ experiencesITA[2].employer }</h5>
-    <div class="date-and-location">
-        <h6 class="experience-inner-date"><i class="fas fa-calendar"></i>${ experiencesITA[2].date }</h6>
-        <h6 class="experience-inner-location"><i class="fas fa-globe"></i>${ experiencesITA[2].locations }</h6>
-    </div>
-    <p class="experience-inner-info">${ experiencesITA[2].info }</p>
-</div>
-<div class="experience experience3">
-    <h3 class="experience-inner-title">${ experiencesITA[3].position }</h3>
-    <h5 class="experience-inner-company">${ experiencesITA[3].employer }</h5>
-    <div class="date-and-location">
-        <h6 class="experience-inner-date"><i class="fas fa-calendar"></i>${ experiencesITA[3].date }</h6>
-        <h6 class="experience-inner-location"><i class="fas fa-globe"></i>${ experiencesITA[3].locations }</h6>
-    </div>
-    <p class="experience-inner-info">${ experiencesITA[3].info }</p>
-</div>
-    `;
-
-    //update certificates
-
-    certificatesTitleContainer.innerHTML = `
-    <h3 class="certificates-title"><span><i class="fas fa-file-alt"></i></span>${ mainTitlesITA[1] }</h3>
-    `;
-
-    //update other title
-
-    otherTitleContainer.innerHTML = `
-    <h3 class="other-title"><span><i class="fas fa-random"></i></span>${ mainTitlesITA[2] }</h3>
-    `;
-
-    //update other
-
-    drivingLicensesContainer.innerHTML = `
-    <h3 class="driving-license-title">${ otherITA[0].title }</h3>
-    <p class="driving-license-info">${ otherITA[0].licenses }</p>
-    `;
-
-    //update phone number and email alert
-})
-
-ukFlag.addEventListener('click', () => {
-
-    isEnglish = true;
-    isItalian = false;
-
-    downloadBtn.setAttribute('href', './documents/CVphiliphinchsliffENG.pdf')
-    downloadBtn.setAttribute('download', 'CVphiliphinchsliffENG.pdf')
-
-    //change flag opacities
-    ukFlag.firstChild.classList.add('active-flag')
-    italyFlag.firstChild.classList.remove('active-flag')
-
-    //update header 
-    headerInfoContainer.innerHTML = `
-        <h1 class="main-title"> <span class="first-name">Philip</span> <span class="last-name">Hinchsliff</span></h1>
-        <h4 class="profession"> < Front-End Developer /> </Front-End></h4>
-        <p class="introduction">${ intro }</p>
-        `;
-
-    //update projects
-    projectsTitleContainer.innerHTML = `
-    <h3 class="projects-title"><span><i class="fas fa-shapes"></i></span>${ asideTitles[1] }</h3>
-    `;
-
-    projectsContainer.innerHTML = `
-    <h4 class="project-title project-title1">MY FOODS APP</h4>
-    <div class="project project1">
-        <div class="project-image">
-            <img src="./images/projectimages/myfood.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title2">WEATHER APP</h4>
-    <div class="project project2">
-        <div class="project-image">
-            <img src="./images/projectimages/weather.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title3">THE SOLAR SYSTEM</h4>
-    <div class="project project3">
-        <div class="project-image">
-            <img src="./images/projectimages/solarsystem.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title4">MY PORTFOLIO</h4>
-    <div class="project project4">
-        <div class="project-image">
-            <img src="./images/projectimages/portfolio.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title5">WORLD COUNTRIES</h4>
-    <div class="project project5">
-        <div class="project-image">
-            <img src="./images/projectimages/worldcontries.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title6">INTERACTIVE ITALY MAP</h4>
-    <div class="project project6">
-        <div class="project-image">
-            <img src="./images/projectimages/mapofitaly.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title7">POKEMON FLIP CARDS</h4>
-    <div class="project project7">
-        <div class="project-image">
-            <img src="./images/projectimages/pokemon.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    <h4 class="project-title project-title8">GYM WEBSITE</h4>
-    <div class="project project8">
-        <div class="project-image">
-            <img src="./images/projectimages/gym.png" alt="">
-        </div>
-        <div class="project-info">
-            <ul>
-                <li>js classes (oop)</li>
-                <li>async/await</li>
-                <li>fetch api</li>
-                <li>high order functions</li>
-                <li>local storage</li>
-                <li>dom manipulation</li>
-            </ul>
-        </div>
-    </div>
-    `;
-
-    //update education
-
-    educationContainer.innerHTML = `
-        <div class="education-title-container">
-        <h3 class="education-title"><span><i class="fas fa-graduation-cap"></i></span>Education</h3>
-    </div>
-    <a href="https://www.liceoquintiliano.edu.it/" target="_blank" title="View Institute" class="education-link">
-    <div class="education-inner">
-        <h4 class="education-inner-title">Scientific Lyceum</h4>
-        <h5 class="education-institute">
-            8° I.I.S.S. "M.F. QUINTILIANO"
-        </h5>
-        <h6 class="education-location"><i class="fas fa-globe"></i> Siracusa, Italy</h6>
-        <small class="education-date"><i class="fas fa-calendar"></i> 2004-2009</small>
-    </div>
-    </a>
-        `;
-
-    //update languages
-
-    languagesContainer.innerHTML = `
-    <div class="languages-title-container">
-    <h3 class="languages-title"><i class="fas fa-flag"></i></span>Languages</h3>
-</div>
-<div class="progress-container">
-    <label for="language-progress1">ENGLISH</label>
-    <div id="language-progress1" class="language-progress1">
-        <div class="language-progress-bar1"></div>
-    </div>
-    <label for="language-progress2">ITALIAN</label>
-    <div id="language-progress2" class="language-progress2">
-        <div class="language-progress-bar2"></div>
-    </div>
-</div>
-    `;
-
-    //update experience title
-
-    experienceTitleContainer.innerHTML = `
-        <h3 class="experience-title"><span><i class="fas fa-briefcase"></i></span>${ mainTitles[0] }</h3>
-        `;
-
-    //update experiences
-
-    innerExperienceContainer.innerHTML = `
-        <div class="experience experience0">
-        <h3 class="experience-inner-title">${ experiences[0].position }</h3>
-        <h5 class="experience-inner-company">${ experiences[0].employer }</h5>
-        <div class="date-and-location">
-            <h6 class="experience-inner-date"><i class="fas fa-calendar"></i>${ experiences[0].date }</h6>
-            <h6 class="experience-inner-location"><i class="fas fa-globe"></i>${ experiences[0].locations }</h6>
-        </div>
-        <p class="experience-inner-info">${ experiences[0].info }</p>
-    </div>
-    <div class="experience experience1">
-        <h3 class="experience-inner-title">${ experiences[1].position }</h3>
-        <h5 class="experience-inner-company">${ experiences[1].employer }</h5>
-        <div class="date-and-location">
-            <h6 class="experience-inner-date"><i class="fas fa-calendar"></i>${ experiences[1].date }</h6>
-            <h6 class="experience-inner-location"><i class="fas fa-globe"></i>${ experiences[1].locations }</h6>
-        </div>
-        <p class="experience-inner-info">${ experiences[1].info }</p>
-    </div>
-    <div class="experience experience2">
-        <h3 class="experience-inner-title">${ experiences[2].position }</h3>
-        <h5 class="experience-inner-company">${ experiences[2].employer }</h5>
-        <div class="date-and-location">
-            <h6 class="experience-inner-date"><i class="fas fa-calendar"></i>${ experiences[2].date }</h6>
-            <h6 class="experience-inner-location"><i class="fas fa-globe"></i>${ experiences[2].locations }</h6>
-        </div>
-        <p class="experience-inner-info">${ experiences[2].info }</p>
-    </div>
-    <div class="experience experience3">
-        <h3 class="experience-inner-title">${ experiences[3].position }</h3>
-        <h5 class="experience-inner-company">${ experiences[3].employer }</h5>
-        <div class="date-and-location">
-            <h6 class="experience-inner-date"><i class="fas fa-calendar"></i>${ experiences[3].date }</h6>
-            <h6 class="experience-inner-location"><i class="fas fa-globe"></i>${ experiences[3].locations }</h6>
-        </div>
-        <p class="experience-inner-info">${ experiences[3].info }</p>
-    </div>
-        `;
-
-    //update certificates
-
-    certificatesTitleContainer.innerHTML = `
-    <h3 class="certificates-title"><span><i class="fas fa-file-alt"></i></span>${ mainTitles[1] }</h3>
-    `;
-
-    //update other title
-
-    otherTitleContainer.innerHTML = `
-        <h3 class="other-title"><span><i class="fas fa-random"></i></span>${ mainTitles[2] }</h3>
-        `;
-
-    //update other
-
-    drivingLicensesContainer.innerHTML = `
-    <h3 class="driving-license-title">${ other[0].title }</h3>
-    <p class="driving-license-info">${ other[0].licenses }</p>
-    `;
 })

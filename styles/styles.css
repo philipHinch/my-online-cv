@@ -69,13 +69,14 @@ body {
 }
 
 /* MODAL */
+
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +91,6 @@ body {
   justify-content: space-evenly;
   align-items: center;
   border: 2px solid var(--main-grey-color);
-  border-radius: 10px;
   position: relative;
 }
 .project-modal-title {
@@ -103,6 +103,7 @@ body {
   align-items: center;
   font-weight: bold;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .project-modal-info {
   font-size: 1.1rem;
@@ -206,7 +207,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding: 0 200px;
+  padding: 0 100px;
 }
 .first-name {
   color: var(--main-grey-color);
