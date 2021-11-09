@@ -510,7 +510,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 30px 20px 50px;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -537,17 +536,6 @@ main {
 .experience {
   padding: 100px 0px 150px 100px;
   border-bottom: 1px solid var(--main-grey-color);
-  /* background-image: linear-gradient(
-    to right top,
-    #c9c9cb,
-    #dbdbdc,
-    #ededed,
-    #f6f6f6,
-    #f6f6f6,
-    #f6f6f6,
-    #f6f6f6,
-    #f6f6f6
-  ); */
 }
 .experience:last-child {
   border-bottom: none;
@@ -810,7 +798,12 @@ footer {
 
   /* experience */
   .experience-container {
-    margin-top: 50px;
+    margin: 50px 0;
+    padding: 30px 5px 30px 5px;
+  }
+  .experience {
+    padding: 100px 50px 150px 50px;
+    border-bottom: 1px solid var(--main-grey-color);
   }
 
   /* certificates */
