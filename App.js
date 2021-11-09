@@ -24,6 +24,7 @@ const project8 = document.querySelector('.project8')
 const modal = document.querySelector('.modal');
 const innerModal = document.querySelector('.inner-modal')
 const modalCloseBtn = document.querySelector('.modal-close-btn');
+const projectModalTitle = document.querySelector('.project-modal-title');
 
 let isItalian;
 let isEnglish;
@@ -94,7 +95,7 @@ project1.addEventListener('click', () => {
 
     //modal close button
     modal.addEventListener('click', (e) => {
-        if (e.target.classList.contains('fa-times')) {
+        if (e.target.classList.contains('fa-times') || e.target.classList.contains('modal')) {
             modal.classList.add('hidden')
             body.style.overflowY = 'scroll';
         }
@@ -142,7 +143,7 @@ project2.addEventListener('click', () => {
 
     //modal close button
     modal.addEventListener('click', (e) => {
-        if (e.target.classList.contains('fa-times')) {
+        if (e.target.classList.contains('fa-times') || e.target.classList.contains('modal')) {
             modal.classList.add('hidden')
             body.style.overflowY = 'scroll';
         }
@@ -190,7 +191,7 @@ project3.addEventListener('click', () => {
 
     //modal close button
     modal.addEventListener('click', (e) => {
-        if (e.target.classList.contains('fa-times')) {
+        if (e.target.classList.contains('fa-times') || e.target.classList.contains('modal')) {
             modal.classList.add('hidden')
             body.style.overflowY = 'scroll';
         }
@@ -238,7 +239,7 @@ project4.addEventListener('click', () => {
 
     //modal close button
     modal.addEventListener('click', (e) => {
-        if (e.target.classList.contains('fa-times')) {
+        if (e.target.classList.contains('fa-times') || e.target.classList.contains('modal')) {
             modal.classList.add('hidden')
             body.style.overflowY = 'scroll';
         }
@@ -286,7 +287,7 @@ project5.addEventListener('click', () => {
 
     //modal close button
     modal.addEventListener('click', (e) => {
-        if (e.target.classList.contains('fa-times')) {
+        if (e.target.classList.contains('fa-times') || e.target.classList.contains('modal')) {
             modal.classList.add('hidden')
             body.style.overflowY = 'scroll';
         }
@@ -334,7 +335,7 @@ project6.addEventListener('click', () => {
 
     //modal close button
     modal.addEventListener('click', (e) => {
-        if (e.target.classList.contains('fa-times')) {
+        if (e.target.classList.contains('fa-times') || e.target.classList.contains('modal')) {
             modal.classList.add('hidden')
             body.style.overflowY = 'scroll';
         }
@@ -382,7 +383,7 @@ project7.addEventListener('click', () => {
 
     //modal close button
     modal.addEventListener('click', (e) => {
-        if (e.target.classList.contains('fa-times')) {
+        if (e.target.classList.contains('fa-times') || e.target.classList.contains('modal')) {
             modal.classList.add('hidden')
             body.style.overflowY = 'scroll';
         }
@@ -430,7 +431,7 @@ project8.addEventListener('click', () => {
 
     //modal close button
     modal.addEventListener('click', (e) => {
-        if (e.target.classList.contains('fa-times')) {
+        if (e.target.classList.contains('fa-times') || e.target.classList.contains('modal')) {
             modal.classList.add('hidden')
             body.style.overflowY = 'scroll';
         }

@@ -827,3 +827,49 @@ footer {
     margin: 0;
   }
 }
+@media (max-width: 500px) {
+  /* header */
+  .inner-header {
+    padding: 50px 0px 50px 0px;
+  }
+  .header-info {
+    min-width: 200px;
+    height: 300px;
+    padding: 0 30px 0 30px;
+  }
+  .main-title {
+    font-size: 2rem;
+    padding: 50px 0;
+  }
+  .profession {
+    padding: 20px 0;
+  }
+  .avatar-container {
+    margin-bottom: 30px;
+  }
+  /* flags */
+  .flags {
+    top: 5px;
+    right: 5px;
+    align-items: flex-end;
+  }
+  .flags .download {
+    letter-spacing: 0;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  .flags .download i {
+    margin-top: 5px;
+  }
+  /* footer */
+  .footer-link {
+    font-size: 0.8rem;
+  }
+  .to-top {
+    font-size: 0.8rem;
+  }
+}
