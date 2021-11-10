@@ -865,6 +865,9 @@ footer {
   .flags .download i {
     margin-top: 5px;
   }
+  .links-grid small {
+    font-size: 0.7rem;
+  }
   /* footer */
   .footer-link {
     font-size: 0.8rem;
