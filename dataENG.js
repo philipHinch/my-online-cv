@@ -49,12 +49,12 @@ const projects = [
         link: 'https://philiphinch.github.io/solar-system/'
     },
     {
-        title: 'my portfolio',
+        title: "phil's recipes",
         tech: ['js classes (oop)', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
         extraInfo: 'zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. z',
-        img: './images/projectimages/portfolio.png',
-        repo: 'https://github.com/philipHinch/my-portfolio',
-        link: 'https://philhinchportfolio.netlify.app/'
+        img: './images/projectimages/philsrecipes.png',
+        repo: 'https://github.com/philipHinch/phils-recipes',
+        link: 'https://phils-recipes.netlify.app/'
     },
     {
         title: 'world countries',
