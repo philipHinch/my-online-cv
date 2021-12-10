@@ -237,10 +237,10 @@
 }
 
 .progress4 > .progress-bar4 {
-  width: 80%;
+  width: 100%;
   border-radius: 20px;
   background-color: var(--main-yellow-color);
-  animation: skill-fill-80 2s ease-in;
+  animation: skill-fill-100 2s ease-in;
 }
 
 /* ----------------   5    ------------- */
