@@ -35,7 +35,7 @@ const projects = [
     {
         title: 'weather app',
         tech: ['js classes (oop)', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: 'This is a modern looking weather application. You can see the real-time weather forecast for any city in the world. I used async/await together with fetch to grab the data from the api. The data is fetched from Accuweather API (https://developer.accuweather.com/)',
+        extraInfo: 'This is one of my first javascript projects i developed and it was the first project were i fetched data from an api. This is a modern looking weather application. You can see the real-time weather forecast for any city in the world. I used async/await together with fetch to grab the data from the api. The data is fetched from Accuweather API (https://developer.accuweather.com/)',
         img: './images/projectimages/weather.png',
         repo: 'https://github.com/philipHinch/iWeather-application',
         link: 'https://www.youtube.com/watch?v=9XA7sQKpL2Y&t=2s&ab_channel=neo90sr'
@@ -59,7 +59,7 @@ const projects = [
     {
         title: 'world countries',
         tech: ['js classes (oop)', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: 'zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. z',
+        extraInfo: 'This is an app that provides you with information about all the 250 countries of the world. This app will allow you to search your countries or sort them either by population or by area. The data was retrieved from Rest Countries API (https://restcountries.com/#api-endpoints-v2). I used fetch together with async/await to fetch the data and i used high order functions like "sort" and "filter" for the filtering and sorting of the countries',
         img: './images/projectimages/worldcountries.png',
         repo: 'https://github.com/philipHinch/world-countries',
         link: 'https://world-countries-database.netlify.app/'
@@ -67,7 +67,7 @@ const projects = [
     {
         title: 'interactive italy map',
         tech: ['js classes (oop)', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: 'zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. z',
+        extraInfo: 'This is a nice project created with Vanilla Javascript about the country where I mostly grew up in. I fetched data from a local json file. There is a lot of dom manipulation going on especially with the Italian SVG. You can select or hover over the region you want to get information about. The right aside section will show some nice information about the specific region. (credit to https://www.wikipedia.org/) The left aside section will show you the provinces for each region. This app is also fully responsive',
         img: './images/projectimages/mapofitaly.png',
         repo: 'https://github.com/philipHinch/interactive-map-of-italy',
         link: 'https://mapofitaly.netlify.app/'
@@ -75,7 +75,7 @@ const projects = [
     {
         title: 'pokemon flip cards',
         tech: ['js classes (oop)', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: 'zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. z',
+        extraInfo: 'With this app you can search your favourite pokemons. After you have searched your pokemon, a cool 3D card flip animation will start showing you the front part of the card with the pokemon stats! If you are undecided, let the random button choose the pokemons for you. In this project I practised my css skills. I learnt how to do css animations and how to create transitions. The data was retrieved from a public API (https://pokeapi.co/)',
         img: './images/projectimages/pokemon.png',
         repo: 'https://github.com/philipHinch/pokemon-cards',
         link: 'https://pokemon-cards-viewer.netlify.app/'
@@ -83,7 +83,7 @@ const projects = [
     {
         title: 'gym webiste',
         tech: ['js classes (oop)', 'async/await', 'fetch api', 'high order functions', 'local storage', 'dom manipulation'],
-        extraInfo: 'zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. z',
+        extraInfo: 'This is one of my first projects where I used html, css and javascript. It is just a simple but cool looking multi-page gym website with some minor dynamicity. It is also fully responsive.',
         img: './images/projectimages/gym.png',
         repo: 'https://github.com/philipHinch/PowerGym',
         link: 'https://powergyms.netlify.app/'
